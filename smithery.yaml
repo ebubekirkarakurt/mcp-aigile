@@ -1,0 +1,11 @@
+name: JobSearchAgent
+version: "1.0"
+runtime: python3.10
+entrypoint: main:app
+tools:
+  - name: job_search
+    description: Search jobs by location, remote, and tag
+    parameters:
+      location: string
+      remote: boolean
+      tag: string
